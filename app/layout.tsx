@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import localFont from 'next/font/local';
+import localFont from "next/font/local";
 import "./globals.css";
 
 const workSans = localFont({
@@ -65,11 +65,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${workSans.variable} antialiased`}
-      >
-        {children}
-      </body>
+      <body className={`${workSans.variable} antialiased`}>{children}</body>
     </html>
   );
 }

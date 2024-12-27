@@ -12,7 +12,7 @@ export default async function Home({
     {
       _createdAt: new Date(),
       views: 55,
-      author: { _id: 1, name: 'Adrian' },
+      author: { _id: 1, name: "Adrian" },
       _id: 1,
       description: "This is a description",
       image: "https://placehold.co/480x480",

@@ -13,6 +13,15 @@ const nextConfig: NextConfig = {
       // Aqui configuramos el accseso a las imagenes, desde otras paginas. Colocamos asteristico, para permitir las imagenes de todas las fuentes
     ],
   },
+  //Configuracion para aparecer componentes de forma dinamica 
+  experimental: {
+    ppr: "incremental",
+  },
+  devIndicators: {
+    appIsrStatus: true,
+    buildActivity: true,
+    buildActivityPosition: "bottom-right",
+  },
 };
 
 export default nextConfig;

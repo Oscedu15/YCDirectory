@@ -17,6 +17,7 @@ const nextConfig: NextConfig = {
   experimental: {
     ppr: "incremental",
     after: true,
+    //`experimental.after` ya no es necesario, porque `after` está disponible de forma predeterminada. Puedes eliminarlo desde next.config.ts.
   },
   devIndicators: {
     appIsrStatus: true,

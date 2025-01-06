@@ -18,8 +18,10 @@ const Navbar = async () => {
           {session && session?.user ? (
             //Si la sesion existe y ya esta identificado el usuario, mostramos lo siguiente.
             <>
-              <span className="max-sm:hidden">Create</span>
-              <BadgePlus className="size-6 sm:hidden" />
+              <Link href="/startup/create">
+                <span className="max-sm:hidden">Create</span>
+                <BadgePlus className="size-6 sm:hidden" />
+              </Link>
               <Link href={`/user/${session?.id}`}>
                 <span>{session?.user?.name}</span>
               </Link>

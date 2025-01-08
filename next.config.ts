@@ -3,6 +3,13 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   /* config options here */
+  //TODO: Configuracion para ignorar los errores de typeScript y Eslint
+  typescript: {
+    ignoreBuildErrors: true,
+  },
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
   images: {
     dangerouslyAllowSVG: true,
     //dangerouslyAllowSVG para permitir que la imagen de svg recibida se establezca

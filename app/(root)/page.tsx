@@ -16,12 +16,12 @@ export default async function Home({
 
   const session = await auth();
 
-  console.log(session?.id);
+  // console.log(session?.id);
 
   //Peticion a la base de datos 
   const {data: posts} = await sanityFetch({query:STARTUPS_QUERY, params})
 
-  console.log(JSON.stringify(posts, null, 2));
+  // console.log(JSON.stringify(posts, null, 2));
 
   //?Tarjeta de ejemplo
   // const posts = [

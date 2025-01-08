@@ -98,7 +98,7 @@ const StartupForm = () => {
           required
           placeholder="Startup Title"
         />
-        {errors.title && <p className="startup-form">{errors.title}</p>}
+        {errors.title && <p className="startup-form_error">{errors.title}</p>}
       </div>
       <div>
         <label htmlFor="description" className="startup-form_label">
@@ -112,7 +112,7 @@ const StartupForm = () => {
           placeholder="Startup Description"
         />
         {errors.description && (
-          <p className="startup-form">{errors.description}</p>
+          <p className="startup-form_error">{errors.description}</p>
         )}
       </div>
       <div>
@@ -126,7 +126,7 @@ const StartupForm = () => {
           required
           placeholder="Startup Category (Tech, Health, Education...)"
         />
-        {errors.category && <p className="startup-form">{errors.category}</p>}
+        {errors.category && <p className="startup-form_error">{errors.category}</p>}
       </div>
       <div>
         <label htmlFor="link" className="startup-form_label">
@@ -139,7 +139,7 @@ const StartupForm = () => {
           required
           placeholder="Image URL"
         />
-        {errors.link && <p className="startup-form">{errors.link}</p>}
+        {errors.link && <p className="startup-form_error">{errors.link}</p>}
       </div>
       <div data-color-mode="light">
         <label htmlFor="pitch" className="startup-form_label">
@@ -160,7 +160,7 @@ const StartupForm = () => {
             disallowedElements: ["style"],
           }}
         />
-        {errors.pitch && <p className="startup-form">{errors.pitch}</p>}
+        {errors.pitch && <p className="startup-form_error">{errors.pitch}</p>}
       </div>
       <Button
         type="submit"
